@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>矢量图案变形器</title>
+    <script>
+      // 首帧前应用主题，避免日/夜间模式切换或刷新时闪白
+      (function () {
+        try {
+          var KEY = 'svg-morph-video:theme'
+          var saved = localStorage.getItem(KEY)
+          var dark =
+            saved === 'dark' ||
+            ((saved === 'auto' || !saved) &&
+              window.matchMedia('(prefers-color-scheme: dark)').matches)
+          var theme = dark ? 'dark' : 'light'
+          document.documentElement.dataset.theme = theme
+          document.documentElement.style.colorScheme = theme
+        } catch (_) {
+          /* 隐私模式等场景静默回退日间 */
+        }
+      })()
+    </script>
+    <script type="module" crossorigin src="/svg_shape_morpher/assets/index-Bn1pW07M.js"></script>
+    <link rel="stylesheet" crossorigin href="/svg_shape_morpher/assets/index-BCa0qDjZ.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
