@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <link rel="icon" href="./favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport-fit=cover：让内容延伸到系统栏区域，env(safe-area-inset-*) 才可能取到非零值 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>矢量图案变形器</title>
     <script>
       // 首帧前应用主题，避免日/夜间模式切换或刷新时闪白
@@ -23,8 +24,8 @@
         }
       })()
     </script>
-    <script type="module" crossorigin src="/svg_shape_morpher/assets/index-Bn1pW07M.js"></script>
-    <link rel="stylesheet" crossorigin href="/svg_shape_morpher/assets/index-BCa0qDjZ.css">
+    <script type="module" crossorigin src="./assets/index-6XUo4Vkb.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BkMJvEz-.css">
   </head>
   <body>
     <div id="app"></div>
