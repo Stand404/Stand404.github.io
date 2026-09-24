@@ -27,10 +27,9 @@
         {
             "name": "总是XX",
             "href": "./always_xx"
-        },
-        {
-            "name": "矢量图案变形器",
-            "href": "./svg_shape_morpher"
+        },{
+            "name": "赛博液压机",
+            "href": "./online_hydraulic_press"
         }
     ]
 },
@@ -39,6 +38,14 @@
     "isOpen": false,
     "href":"#",
     "children": [
+        {
+            "name": "像素精灵图处理",
+            "href": "./spriteframe_fixer"
+        },
+        {
+            "name": "矢量图案变形器",
+            "href": "./svg_shape_morpher"
+        },
         {
             "name": "圣诞卡片",
             "href": "./Christmas-card/index.html"
