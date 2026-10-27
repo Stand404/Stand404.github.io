@@ -30,6 +30,9 @@
         },{
             "name": "赛博液压机",
             "href": "./online_hydraulic_press"
+        },{
+            "name": "保护塔菲",
+            "href": "./protect_taffy"
         }
     ]
 },
