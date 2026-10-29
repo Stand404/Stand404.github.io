@@ -1,0 +1,57 @@
+{
+  "app.title": "タフィーを守れ",
+
+  "common.confirm": "決定",
+  "common.cancel": "キャンセル",
+  "common.delete": "削除",
+
+  "about.title": "このゲームについて",
+  "about.message": "タフィーを守れ（Protect Taffy）\n線を引いて、ヘイターからタフィーを守ろう。\n\nメニュー：フルスクリーン、このゲームについて、設定\nゲーム：ドラッグで線を引いて、離すとスタート\nエディター：自分でレベルを作って試せる",
+
+  "settings.title": "設定",
+  "settings.music": "音楽",
+  "settings.sfx": "効果音",
+  "settings.language": "言語",
+
+  "boot.preparing": "準備中…",
+  "boot.done": "読み込み完了",
+
+  "levelSelect.title": "ステージ選択",
+
+  "game.loseWater": "タフィーが水に落ちた",
+  "game.loseLava": "タフィーが溶岩に落ちた",
+  "game.loseSpike": "タフィーがトゲに刺された",
+  "game.loseTitle": "タフィーを守れなかった",
+  "game.loseSubtitle": "タフィーはとても悲しんでいる。もう一度挑戦しよう",
+  "game.winTitle": "タフィーを守り切った",
+  "game.winSubtitle": "タフィーは時間切れまで耐え抜いた",
+  "game.winSubtitleCleared": "ヘイターは全部消えた",
+  "game.testWin": "耐え切った！",
+  "game.testLose": "もう一度",
+
+  "editor.defaultName": "カスタムステージ",
+  "editor.defaultHint": "エディターで作ったステージ",
+  "editor.paletteTitle": "すべての地形",
+  "editor.paletteHint": "タイルをタップして選択し、上のクイックスロットと入れ替える",
+  "editor.cleared": "地形を消去しました",
+  "editor.nothingToUndo": "元に戻せる操作がありません",
+
+  "editorList.builtinTag": "公式ステージ",
+  "editorList.userTag": "マイステージ",
+  "editorList.noHint": "（メモなし）",
+  "editorList.exported": "エクスポートして JSON をコピーしました",
+  "editorList.newTitle": "ステージ作成",
+  "editorList.newDefaultName": "新しいステージ",
+  "editorList.created": "作成しました。カードをタップして編集",
+  "editorList.imported": "インポートしました：{name}",
+  "editorList.importFailed": "インポート失敗：JSON の解析エラー",
+  "editorList.editTitle": "ステージ情報を編集",
+  "editorList.deleteTitle": "ステージ削除",
+  "editorList.deleteMessage": "「{name}」を削除しますか？元に戻せません。",
+
+  "dialog.nameLabel": "ステージ名",
+  "dialog.namePlaceholder": "ステージ名を入力",
+  "dialog.hintLabel": "ステージのメモ",
+  "dialog.hintPlaceholder": "任意。ステージ一覧に表示されます",
+  "dialog.nameRequired": "ステージ名を入力してください"
+}

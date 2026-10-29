@@ -1,0 +1,2319 @@
+{
+  "$comment": "编辑器「全部地形」面板与运行时碰撞的唯一数据源：分组、中文名、碰撞形状都写在这里。",
+  "groups": [
+    {
+      "id": "terrain",
+      "label": "地形"
+    },
+    {
+      "id": "liquid",
+      "label": "液体"
+    },
+    {
+      "id": "nature",
+      "label": "自然"
+    },
+    {
+      "id": "prop",
+      "label": "道具"
+    }
+  ],
+  "defaultQuickSlots": [
+    "terrain_grass_block_top",
+    "terrain_grass_block_center",
+    "terrain_grass_block_left",
+    "terrain_grass_block_right",
+    "terrain_grass_block",
+    "terrain_dirt_block_center",
+    "terrain_sand_block_top",
+    "terrain_snow_block_top",
+    "water"
+  ],
+  "legacyAliases": {
+    "terrain-dirt-center": "terrain_dirt_block_center",
+    "terrain-grass-top": "terrain_grass_block_top",
+    "terrain-grass-right": "terrain_grass_block_right",
+    "terrain-grass-bottom": "terrain_grass_block_bottom",
+    "terrain-grass-left": "terrain_grass_block_left",
+    "terrain-grass-tl": "terrain_grass_block_top_left",
+    "terrain-grass-tr": "terrain_grass_block_top_right",
+    "terrain-grass-br": "terrain_grass_block_bottom_right",
+    "terrain-grass-bl": "terrain_grass_block_bottom_left",
+    "terrain-water-source": "water"
+  },
+  "tiles": [
+    {
+      "key": "bush",
+      "group": "nature",
+      "label": "灌木",
+      "collision": {
+        "kind": "none"
+      }
+    },
+    {
+      "key": "grass",
+      "group": "nature",
+      "label": "草",
+      "collision": {
+        "kind": "none"
+      }
+    },
+    {
+      "key": "grass_purple",
+      "group": "nature",
+      "label": "草紫",
+      "collision": {
+        "kind": "none"
+      }
+    },
+    {
+      "key": "lava",
+      "group": "liquid",
+      "label": "岩浆",
+      "collision": {
+        "kind": "hazard",
+        "hazard": "lava"
+      }
+    },
+    {
+      "key": "lava_top",
+      "group": "liquid",
+      "label": "岩浆上",
+      "collision": {
+        "kind": "hazard",
+        "hazard": "lava"
+      }
+    },
+    {
+      "key": "lava_top_low",
+      "group": "liquid",
+      "label": "岩浆上低",
+      "collision": {
+        "kind": "hazard",
+        "hazard": "lava"
+      }
+    },
+    {
+      "key": "mushroom_brown",
+      "group": "nature",
+      "label": "蘑菇棕",
+      "collision": {
+        "kind": "none"
+      }
+    },
+    {
+      "key": "mushroom_red",
+      "group": "nature",
+      "label": "蘑菇红",
+      "collision": {
+        "kind": "none"
+      }
+    },
+    {
+      "key": "rock",
+      "group": "nature",
+      "label": "岩石",
+      "collision": {
+        "kind": "none"
+      }
+    },
+    {
+      "key": "saw",
+      "group": "prop",
+      "label": "旋转刺轮",
+      "collision": {
+        "kind": "spike",
+        "orientation": "up",
+        "rect": [
+          0.15,
+          0.15,
+          0.7,
+          0.7
+        ]
+      }
+    },
+    {
+      "key": "snow",
+      "group": "nature",
+      "label": "雪",
+      "collision": {
+        "kind": "none"
+      }
+    },
+    {
+      "key": "spikes",
+      "group": "prop",
+      "label": "尖刺（朝上）",
+      "collision": {
+        "kind": "spike",
+        "orientation": "up",
+        "rect": [
+          0,
+          0.5,
+          1,
+          0.5
+        ]
+      }
+    },
+    {
+      "key": "spikes_down",
+      "group": "prop",
+      "label": "尖刺（朝下）",
+      "collision": {
+        "kind": "spike",
+        "orientation": "down",
+        "rect": [
+          0,
+          0,
+          1,
+          0.5
+        ]
+      }
+    },
+    {
+      "key": "spikes_left",
+      "group": "prop",
+      "label": "尖刺（朝左）",
+      "collision": {
+        "kind": "spike",
+        "orientation": "left",
+        "rect": [
+          0.5,
+          0,
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "key": "spikes_right",
+      "group": "prop",
+      "label": "尖刺（朝右）",
+      "collision": {
+        "kind": "spike",
+        "orientation": "right",
+        "rect": [
+          0,
+          0,
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "key": "terrain_dirt_block",
+      "group": "terrain",
+      "label": "泥土整块",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_block_bottom",
+      "group": "terrain",
+      "label": "泥土下边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_block_bottom_left",
+      "group": "terrain",
+      "label": "泥土左下角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_block_bottom_right",
+      "group": "terrain",
+      "label": "泥土右下角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_block_center",
+      "group": "terrain",
+      "label": "泥土内部",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_block_left",
+      "group": "terrain",
+      "label": "泥土左边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_block_right",
+      "group": "terrain",
+      "label": "泥土右边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_block_top",
+      "group": "terrain",
+      "label": "泥土上边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_block_top_left",
+      "group": "terrain",
+      "label": "泥土左上角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_block_top_right",
+      "group": "terrain",
+      "label": "泥土右上角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_cloud",
+      "group": "terrain",
+      "label": "泥土云朵",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_cloud_left",
+      "group": "terrain",
+      "label": "泥土云左",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_cloud_middle",
+      "group": "terrain",
+      "label": "泥土云中",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_cloud_right",
+      "group": "terrain",
+      "label": "泥土云右",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_horizontal_left",
+      "group": "terrain",
+      "label": "泥土横左",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_horizontal_middle",
+      "group": "terrain",
+      "label": "泥土横中",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_horizontal_overhang_left",
+      "group": "terrain",
+      "label": "泥土横檐左",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_horizontal_overhang_right",
+      "group": "terrain",
+      "label": "泥土横檐右",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_horizontal_right",
+      "group": "terrain",
+      "label": "泥土横右",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_ramp_long_a",
+      "group": "terrain",
+      "label": "泥土长坡A",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0.5
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_dirt_ramp_long_a_flipx",
+      "group": "terrain",
+      "label": "泥土长坡A（翻转）",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0.5
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_dirt_ramp_long_b",
+      "group": "terrain",
+      "label": "泥土长坡B",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            0,
+            0.5
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_dirt_ramp_long_b_flipx",
+      "group": "terrain",
+      "label": "泥土长坡B（翻转）",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            1,
+            0.5
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_dirt_ramp_long_c",
+      "group": "terrain",
+      "label": "泥土长坡C",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_ramp_long_c_flipx",
+      "group": "terrain",
+      "label": "泥土长坡C（翻转）",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_ramp_short_a",
+      "group": "terrain",
+      "label": "泥土短坡A",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_ramp_short_a_flipx",
+      "group": "terrain",
+      "label": "泥土短坡A（翻转）",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_ramp_short_b",
+      "group": "terrain",
+      "label": "泥土短坡B",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_dirt_ramp_short_b_flipx",
+      "group": "terrain",
+      "label": "泥土短坡B（翻转）",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_dirt_vertical_bottom",
+      "group": "terrain",
+      "label": "泥土竖下",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_vertical_middle",
+      "group": "terrain",
+      "label": "泥土竖中",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_dirt_vertical_top",
+      "group": "terrain",
+      "label": "泥土竖上",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_block",
+      "group": "terrain",
+      "label": "草地整块",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_block_bottom",
+      "group": "terrain",
+      "label": "草地下边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_block_bottom_left",
+      "group": "terrain",
+      "label": "草地左下角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_block_bottom_right",
+      "group": "terrain",
+      "label": "草地右下角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_block_center",
+      "group": "terrain",
+      "label": "草地内部",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_block_left",
+      "group": "terrain",
+      "label": "草地左边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_block_right",
+      "group": "terrain",
+      "label": "草地右边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_block_top",
+      "group": "terrain",
+      "label": "草地上边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_block_top_left",
+      "group": "terrain",
+      "label": "草地左上角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_block_top_right",
+      "group": "terrain",
+      "label": "草地右上角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_cloud",
+      "group": "terrain",
+      "label": "草地云朵",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_cloud_left",
+      "group": "terrain",
+      "label": "草地云左",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_cloud_middle",
+      "group": "terrain",
+      "label": "草地云中",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_cloud_right",
+      "group": "terrain",
+      "label": "草地云右",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_horizontal_left",
+      "group": "terrain",
+      "label": "草地横左",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_horizontal_middle",
+      "group": "terrain",
+      "label": "草地横中",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_horizontal_overhang_left",
+      "group": "terrain",
+      "label": "草地横檐左",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_horizontal_overhang_right",
+      "group": "terrain",
+      "label": "草地横檐右",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_horizontal_right",
+      "group": "terrain",
+      "label": "草地横右",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_ramp_long_a",
+      "group": "terrain",
+      "label": "草地长坡A",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0.5
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_grass_ramp_long_a_flipx",
+      "group": "terrain",
+      "label": "草地长坡A（翻转）",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0.5
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_grass_ramp_long_b",
+      "group": "terrain",
+      "label": "草地长坡B",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            0,
+            0.5
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_grass_ramp_long_b_flipx",
+      "group": "terrain",
+      "label": "草地长坡B（翻转）",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            1,
+            0.5
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_grass_ramp_long_c",
+      "group": "terrain",
+      "label": "草地长坡C",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_ramp_long_c_flipx",
+      "group": "terrain",
+      "label": "草地长坡C（翻转）",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_ramp_short_a",
+      "group": "terrain",
+      "label": "草地短坡A",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_ramp_short_a_flipx",
+      "group": "terrain",
+      "label": "草地短坡A（翻转）",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_ramp_short_b",
+      "group": "terrain",
+      "label": "草地短坡B",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_grass_ramp_short_b_flipx",
+      "group": "terrain",
+      "label": "草地短坡B（翻转）",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_grass_vertical_bottom",
+      "group": "terrain",
+      "label": "草地竖下",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_vertical_middle",
+      "group": "terrain",
+      "label": "草地竖中",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_grass_vertical_top",
+      "group": "terrain",
+      "label": "草地竖上",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_block",
+      "group": "terrain",
+      "label": "紫晶整块",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_block_bottom",
+      "group": "terrain",
+      "label": "紫晶下边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_block_bottom_left",
+      "group": "terrain",
+      "label": "紫晶左下角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_block_bottom_right",
+      "group": "terrain",
+      "label": "紫晶右下角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_block_center",
+      "group": "terrain",
+      "label": "紫晶内部",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_block_left",
+      "group": "terrain",
+      "label": "紫晶左边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_block_right",
+      "group": "terrain",
+      "label": "紫晶右边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_block_top",
+      "group": "terrain",
+      "label": "紫晶上边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_block_top_left",
+      "group": "terrain",
+      "label": "紫晶左上角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_block_top_right",
+      "group": "terrain",
+      "label": "紫晶右上角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_cloud",
+      "group": "terrain",
+      "label": "紫晶云朵",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_cloud_left",
+      "group": "terrain",
+      "label": "紫晶云左",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_cloud_middle",
+      "group": "terrain",
+      "label": "紫晶云中",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_cloud_right",
+      "group": "terrain",
+      "label": "紫晶云右",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_horizontal_left",
+      "group": "terrain",
+      "label": "紫晶横左",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_horizontal_middle",
+      "group": "terrain",
+      "label": "紫晶横中",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_horizontal_overhang_left",
+      "group": "terrain",
+      "label": "紫晶横檐左",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_horizontal_overhang_right",
+      "group": "terrain",
+      "label": "紫晶横檐右",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_horizontal_right",
+      "group": "terrain",
+      "label": "紫晶横右",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_ramp_long_a",
+      "group": "terrain",
+      "label": "紫晶长坡A",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0.5
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_purple_ramp_long_a_flipx",
+      "group": "terrain",
+      "label": "紫晶长坡A（翻转）",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0.5
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_purple_ramp_long_b",
+      "group": "terrain",
+      "label": "紫晶长坡B",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            0,
+            0.5
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_purple_ramp_long_b_flipx",
+      "group": "terrain",
+      "label": "紫晶长坡B（翻转）",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            1,
+            0.5
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_purple_ramp_long_c",
+      "group": "terrain",
+      "label": "紫晶长坡C",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_ramp_long_c_flipx",
+      "group": "terrain",
+      "label": "紫晶长坡C（翻转）",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_ramp_short_a",
+      "group": "terrain",
+      "label": "紫晶短坡A",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_ramp_short_a_flipx",
+      "group": "terrain",
+      "label": "紫晶短坡A（翻转）",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_ramp_short_b",
+      "group": "terrain",
+      "label": "紫晶短坡B",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_purple_ramp_short_b_flipx",
+      "group": "terrain",
+      "label": "紫晶短坡B（翻转）",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_purple_vertical_bottom",
+      "group": "terrain",
+      "label": "紫晶竖下",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_vertical_middle",
+      "group": "terrain",
+      "label": "紫晶竖中",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_purple_vertical_top",
+      "group": "terrain",
+      "label": "紫晶竖上",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_block",
+      "group": "terrain",
+      "label": "沙地整块",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_block_bottom",
+      "group": "terrain",
+      "label": "沙地下边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_block_bottom_left",
+      "group": "terrain",
+      "label": "沙地左下角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_block_bottom_right",
+      "group": "terrain",
+      "label": "沙地右下角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_block_center",
+      "group": "terrain",
+      "label": "沙地内部",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_block_left",
+      "group": "terrain",
+      "label": "沙地左边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_block_right",
+      "group": "terrain",
+      "label": "沙地右边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_block_top",
+      "group": "terrain",
+      "label": "沙地上边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_block_top_left",
+      "group": "terrain",
+      "label": "沙地左上角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_block_top_right",
+      "group": "terrain",
+      "label": "沙地右上角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_cloud",
+      "group": "terrain",
+      "label": "沙地云朵",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_cloud_left",
+      "group": "terrain",
+      "label": "沙地云左",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_cloud_middle",
+      "group": "terrain",
+      "label": "沙地云中",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_cloud_right",
+      "group": "terrain",
+      "label": "沙地云右",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_horizontal_left",
+      "group": "terrain",
+      "label": "沙地横左",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_horizontal_middle",
+      "group": "terrain",
+      "label": "沙地横中",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_horizontal_overhang_left",
+      "group": "terrain",
+      "label": "沙地横檐左",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_horizontal_overhang_right",
+      "group": "terrain",
+      "label": "沙地横檐右",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_horizontal_right",
+      "group": "terrain",
+      "label": "沙地横右",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_ramp_long_a",
+      "group": "terrain",
+      "label": "沙地长坡A",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0.5
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_sand_ramp_long_a_flipx",
+      "group": "terrain",
+      "label": "沙地长坡A（翻转）",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0.5
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_sand_ramp_long_b",
+      "group": "terrain",
+      "label": "沙地长坡B",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            0,
+            0.5
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_sand_ramp_long_b_flipx",
+      "group": "terrain",
+      "label": "沙地长坡B（翻转）",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            1,
+            0.5
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_sand_ramp_long_c",
+      "group": "terrain",
+      "label": "沙地长坡C",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_ramp_long_c_flipx",
+      "group": "terrain",
+      "label": "沙地长坡C（翻转）",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_ramp_short_a",
+      "group": "terrain",
+      "label": "沙地短坡A",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_ramp_short_a_flipx",
+      "group": "terrain",
+      "label": "沙地短坡A（翻转）",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_ramp_short_b",
+      "group": "terrain",
+      "label": "沙地短坡B",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_sand_ramp_short_b_flipx",
+      "group": "terrain",
+      "label": "沙地短坡B（翻转）",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_sand_vertical_bottom",
+      "group": "terrain",
+      "label": "沙地竖下",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_vertical_middle",
+      "group": "terrain",
+      "label": "沙地竖中",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_sand_vertical_top",
+      "group": "terrain",
+      "label": "沙地竖上",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_block",
+      "group": "terrain",
+      "label": "雪地整块",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_block_bottom",
+      "group": "terrain",
+      "label": "雪地下边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_block_bottom_left",
+      "group": "terrain",
+      "label": "雪地左下角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_block_bottom_right",
+      "group": "terrain",
+      "label": "雪地右下角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_block_center",
+      "group": "terrain",
+      "label": "雪地内部",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_block_left",
+      "group": "terrain",
+      "label": "雪地左边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_block_right",
+      "group": "terrain",
+      "label": "雪地右边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_block_top",
+      "group": "terrain",
+      "label": "雪地上边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_block_top_left",
+      "group": "terrain",
+      "label": "雪地左上角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_block_top_right",
+      "group": "terrain",
+      "label": "雪地右上角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_cloud",
+      "group": "terrain",
+      "label": "雪地云朵",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_cloud_left",
+      "group": "terrain",
+      "label": "雪地云左",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_cloud_middle",
+      "group": "terrain",
+      "label": "雪地云中",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_cloud_right",
+      "group": "terrain",
+      "label": "雪地云右",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_horizontal_left",
+      "group": "terrain",
+      "label": "雪地横左",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_horizontal_middle",
+      "group": "terrain",
+      "label": "雪地横中",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_horizontal_overhang_left",
+      "group": "terrain",
+      "label": "雪地横檐左",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_horizontal_overhang_right",
+      "group": "terrain",
+      "label": "雪地横檐右",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_horizontal_right",
+      "group": "terrain",
+      "label": "雪地横右",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_ramp_long_a",
+      "group": "terrain",
+      "label": "雪地长坡A",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0.5
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_snow_ramp_long_a_flipx",
+      "group": "terrain",
+      "label": "雪地长坡A（翻转）",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0.5
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_snow_ramp_long_b",
+      "group": "terrain",
+      "label": "雪地长坡B",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            0,
+            0.5
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_snow_ramp_long_b_flipx",
+      "group": "terrain",
+      "label": "雪地长坡B（翻转）",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            1,
+            0.5
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_snow_ramp_long_c",
+      "group": "terrain",
+      "label": "雪地长坡C",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_ramp_long_c_flipx",
+      "group": "terrain",
+      "label": "雪地长坡C（翻转）",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_ramp_short_a",
+      "group": "terrain",
+      "label": "雪地短坡A",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_ramp_short_a_flipx",
+      "group": "terrain",
+      "label": "雪地短坡A（翻转）",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_ramp_short_b",
+      "group": "terrain",
+      "label": "雪地短坡B",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_snow_ramp_short_b_flipx",
+      "group": "terrain",
+      "label": "雪地短坡B（翻转）",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_snow_vertical_bottom",
+      "group": "terrain",
+      "label": "雪地竖下",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_vertical_middle",
+      "group": "terrain",
+      "label": "雪地竖中",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_snow_vertical_top",
+      "group": "terrain",
+      "label": "雪地竖上",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_block",
+      "group": "terrain",
+      "label": "石地整块",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_block_bottom",
+      "group": "terrain",
+      "label": "石地下边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_block_bottom_left",
+      "group": "terrain",
+      "label": "石地左下角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_block_bottom_right",
+      "group": "terrain",
+      "label": "石地右下角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_block_center",
+      "group": "terrain",
+      "label": "石地内部",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_block_left",
+      "group": "terrain",
+      "label": "石地左边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_block_right",
+      "group": "terrain",
+      "label": "石地右边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_block_top",
+      "group": "terrain",
+      "label": "石地上边",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_block_top_left",
+      "group": "terrain",
+      "label": "石地左上角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_block_top_right",
+      "group": "terrain",
+      "label": "石地右上角",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_cloud",
+      "group": "terrain",
+      "label": "石地云朵",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_cloud_left",
+      "group": "terrain",
+      "label": "石地云左",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_cloud_middle",
+      "group": "terrain",
+      "label": "石地云中",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_cloud_right",
+      "group": "terrain",
+      "label": "石地云右",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_horizontal_left",
+      "group": "terrain",
+      "label": "石地横左",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_horizontal_middle",
+      "group": "terrain",
+      "label": "石地横中",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_horizontal_overhang_left",
+      "group": "terrain",
+      "label": "石地横檐左",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_horizontal_overhang_right",
+      "group": "terrain",
+      "label": "石地横檐右",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_horizontal_right",
+      "group": "terrain",
+      "label": "石地横右",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_ramp_long_a",
+      "group": "terrain",
+      "label": "石地长坡A",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0.5
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_stone_ramp_long_a_flipx",
+      "group": "terrain",
+      "label": "石地长坡A（翻转）",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0.5
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_stone_ramp_long_b",
+      "group": "terrain",
+      "label": "石地长坡B",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            0,
+            0.5
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_stone_ramp_long_b_flipx",
+      "group": "terrain",
+      "label": "石地长坡B（翻转）",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            1,
+            0.5
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_stone_ramp_long_c",
+      "group": "terrain",
+      "label": "石地长坡C",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_ramp_long_c_flipx",
+      "group": "terrain",
+      "label": "石地长坡C（翻转）",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_ramp_short_a",
+      "group": "terrain",
+      "label": "石地短坡A",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_ramp_short_a_flipx",
+      "group": "terrain",
+      "label": "石地短坡A（翻转）",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_ramp_short_b",
+      "group": "terrain",
+      "label": "石地短坡B",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_stone_ramp_short_b_flipx",
+      "group": "terrain",
+      "label": "石地短坡B（翻转）",
+      "collision": {
+        "kind": "ramp",
+        "outline": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "key": "terrain_stone_vertical_bottom",
+      "group": "terrain",
+      "label": "石地竖下",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_vertical_middle",
+      "group": "terrain",
+      "label": "石地竖中",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "terrain_stone_vertical_top",
+      "group": "terrain",
+      "label": "石地竖上",
+      "collision": {
+        "kind": "solid"
+      }
+    },
+    {
+      "key": "water",
+      "group": "liquid",
+      "label": "水",
+      "collision": {
+        "kind": "hazard",
+        "hazard": "water"
+      }
+    },
+    {
+      "key": "water_top",
+      "group": "liquid",
+      "label": "水上",
+      "collision": {
+        "kind": "hazard",
+        "hazard": "water"
+      }
+    },
+    {
+      "key": "water_top_low",
+      "group": "liquid",
+      "label": "水上低",
+      "collision": {
+        "kind": "hazard",
+        "hazard": "water"
+      }
+    }
+  ]
+}

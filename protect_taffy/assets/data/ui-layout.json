@@ -1,0 +1,165 @@
+{
+  "$comment": "UI 布局常量。只放原子数值：居中、等宽、内缩这类派生关系统一在代码里算，改一处即可全联动。单位是世界坐标像素（720x1280 画布）。",
+
+  "settings": {
+    "panel": {
+      "width": 620,
+      "textureWidth": 599,
+      "textureHeight": 457,
+      "depth": 40,
+      "backdropColor": "#1c0928",
+      "backdropAlpha": 0.55
+    },
+    "title": {
+      "offsetY": -190,
+      "iconSize": 42,
+      "iconGap": 14,
+      "fontSize": 36,
+      "color": "#FDE7D7",
+      "strokeColor": "#862536",
+      "strokeThickness": 8
+    },
+    "rows": {
+      "startY": -96,
+      "gap": 104,
+      "sideOutset": 30,
+      "leftBaseX": -196,
+      "iconSize": 52,
+      "labelOffsetX": 34,
+      "labelFontSize": 26,
+      "labelColor": "#7a1f4f"
+    },
+    "track": {
+      "height": 26,
+      "textureWidth": 600,
+      "textureHeight": 63,
+      "textureCap": 32,
+      "thumbSize": 44
+    },
+    "select": {
+      "width": 260,
+      "height": 48,
+      "baseX": 84,
+      "fontSize": 32,
+      "textInsetX": 18,
+      "arrowWidth": 22,
+      "arrowHeight": 16,
+      "arrowInsetX": 26
+    },
+    "dropdown": {
+      "slice": 40,
+      "topPad": 30,
+      "bottomPad": 10,
+      "overlap": 25,
+      "textInsetX": 10,
+      "activeColor": "#e93d82"
+    },
+    "close": {
+      "size": 74,
+      "inset": 62
+    }
+  },
+
+  "editor": {
+    "interactionHeight": 150,
+    "topRow": {
+      "y": 41,
+      "buttonWidth": 68,
+      "buttonHeight": 66,
+      "iconSize": 42,
+      "margin": 50,
+      "gap": 10
+    },
+    "quickBar": {
+      "slotSize": 66,
+      "slotGap": 2,
+      "iconInset": 6,
+      "rowY": 113
+    },
+    "packButton": {
+      "width": 66,
+      "height": 64,
+      "iconSize": 42,
+      "gap": 12
+    },
+    "palette": {
+      "depth": 500,
+      "cols": 8,
+      "rows": 9,
+      "cellWidth": 84,
+      "cellHeight": 84,
+      "iconSize": 64,
+      "titleX": 32,
+      "titleY": 55,
+      "titleFontSize": 32,
+      "titleColor": "#7a1f4f",
+      "quickY": 167,
+      "tabsY": 268,
+      "tabWidth": 128,
+      "tabHeight": 48,
+      "tabGap": 12,
+      "tabFontSize": 23,
+      "gridTop": 314,
+      "pagerY": 1116,
+      "hintY": 1195,
+      "hintFontSize": 20,
+      "hintColor": "#a8567a",
+      "pageFontSize": 26,
+      "pagerButtonWidth": 66,
+      "pagerButtonHeight": 66,
+      "pagerIconSize": 40,
+      "closeX": 668,
+      "closeWidth": 72,
+      "closeHeight": 70,
+      "closeIconSize": 40
+    },
+    "tint": {
+      "dim": "#8c8c8c",
+      "tabDimAlpha": 0.45
+    },
+    "colors": {
+      "text": "#7a1f4f",
+      "labelFontSize": 23
+    }
+  },
+
+  "editorList": {
+    "titleY": 100,
+    "titleMaxWidth": 640,
+    "titleMaxHeight": 230,
+    "listTop": 385,
+    "cardWidth": 660,
+    "cardFallbackHeight": 132,
+    "cardGap": 20,
+    "maskTopInset": 8,
+    "maskBottomInset": 36,
+    "viewportInset": 20,
+    "headerButtonY": 230,
+    "headerButtonWidth": 92,
+    "headerButtonHeight": 84,
+    "backButtonX": 82,
+    "newButtonX": 522,
+    "importButtonX": 640,
+    "cardHeight": 132,
+    "textLeftX": 80,
+    "nameFontSize": 30,
+    "nameColor": "#553037",
+    "nameOffsetYRatio": -0.21,
+    "tagFontSize": 20,
+    "tagPaddingX": 8,
+    "tagPaddingY": 3,
+    "tagRadius": 6,
+    "hintFontSize": 22,
+    "hintColor": "#b27b80",
+    "hintOffsetYRatio": 0.21,
+    "hintWrapWidth": 600,
+    "actionButtonSize": 76,
+    "actionButtonGap": 8,
+    "actionRightInset": 90,
+    "toastY": -60,
+    "toastFontSize": 26,
+    "toastDurationMs": 2200,
+    "builtinTagColor": "#7a1f4f",
+    "userTagColor": "#e0568f"
+  }
+}

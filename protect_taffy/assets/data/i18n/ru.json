@@ -1,0 +1,57 @@
+{
+  "app.title": "Защити Таффи",
+
+  "common.confirm": "ОК",
+  "common.cancel": "Отмена",
+  "common.delete": "Удалить",
+
+  "about.title": "Об игре",
+  "about.message": "Защити Таффи\nНарисуйте линию, чтобы защитить Таффи от хейтеров.\n\nМеню: полный экран, об игре, настройки\nИгра: рисуйте линию, отпустите — Таффи побежит\nРедактор: создавайте свои уровни и проверяйте их",
+
+  "settings.title": "Настройки",
+  "settings.music": "Музыка",
+  "settings.sfx": "Звуки",
+  "settings.language": "Язык",
+
+  "boot.preparing": "Подготовка…",
+  "boot.done": "Готово",
+
+  "levelSelect.title": "Выбор уровня",
+
+  "game.loseWater": "Таффи упала в воду",
+  "game.loseLava": "Таффи упала в лаву",
+  "game.loseSpike": "Таффи напоролась на шип",
+  "game.loseTitle": "Не удалось защитить Таффи",
+  "game.loseSubtitle": "Таффи очень расстроена. Попробуй ещё раз",
+  "game.winTitle": "Таффи защищена",
+  "game.winSubtitle": "Таффи продержалась до конца отсчёта",
+  "game.winSubtitleCleared": "Все хейтеры исчезли",
+  "game.testWin": "Выстояла!",
+  "game.testLose": "Ещё раз",
+
+  "editor.defaultName": "Свой уровень",
+  "editor.defaultHint": "Уровень, созданный в редакторе",
+  "editor.paletteTitle": "Все тайлы",
+  "editor.paletteHint": "Нажми на тайл, чтобы выбрать его и заменить активный слот",
+  "editor.cleared": "Рельеф очищен",
+  "editor.nothingToUndo": "Нечего отменять",
+
+  "editorList.builtinTag": "Официальный",
+  "editorList.userTag": "Мой",
+  "editorList.noHint": "(без заметки)",
+  "editorList.exported": "Экспортировано, JSON скопирован",
+  "editorList.newTitle": "Новый уровень",
+  "editorList.newDefaultName": "Новый уровень",
+  "editorList.created": "Создано. Нажми на карточку, чтобы редактировать",
+  "editorList.imported": "Импортировано: {name}",
+  "editorList.importFailed": "Ошибка импорта: неверный JSON",
+  "editorList.editTitle": "Изменить уровень",
+  "editorList.deleteTitle": "Удалить уровень",
+  "editorList.deleteMessage": "Удалить «{name}»? Это действие необратимо.",
+
+  "dialog.nameLabel": "Название уровня",
+  "dialog.namePlaceholder": "Дай уровню название",
+  "dialog.hintLabel": "Заметка к уровню",
+  "dialog.hintPlaceholder": "Необязательно, показывается в списке",
+  "dialog.nameRequired": "Название не может быть пустым"
+}

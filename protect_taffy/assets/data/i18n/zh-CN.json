@@ -1,0 +1,57 @@
+{
+  "app.title": "保护塔菲",
+
+  "common.confirm": "确定",
+  "common.cancel": "取消",
+  "common.delete": "删除",
+
+  "about.title": "关于",
+  "about.message": "保护塔菲（Protect Taffy）\n画一条线，帮塔菲挡住黑粉。\n\n主界面：全屏、关于、设置\n游戏：按住拖动画线，松手开跑\n编辑器：可自己做关卡并试玩",
+
+  "settings.title": "设置",
+  "settings.music": "音乐",
+  "settings.sfx": "音效",
+  "settings.language": "语言",
+
+  "boot.preparing": "准备中…",
+  "boot.done": "加载完成",
+
+  "levelSelect.title": "选择关卡",
+
+  "game.loseWater": "塔菲掉进水里了",
+  "game.loseLava": "塔菲掉进岩浆里了",
+  "game.loseSpike": "塔菲被尖刺扎到了",
+  "game.loseTitle": "保护塔菲失败",
+  "game.loseSubtitle": "塔菲哭得很伤心，再试一次吧",
+  "game.winTitle": "成功保护塔菲",
+  "game.winSubtitle": "塔菲安全地撑到了倒计时结束",
+  "game.winSubtitleCleared": "黑粉都消失了",
+  "game.testWin": "撑住了！",
+  "game.testLose": "再来一次",
+
+  "editor.defaultName": "自定义关卡",
+  "editor.defaultHint": "用编辑器制作的关卡",
+  "editor.paletteTitle": "全部地形",
+  "editor.paletteHint": "点击瓦片选中，并替换上方快捷栏当前槽位",
+  "editor.cleared": "已清空地形",
+  "editor.nothingToUndo": "没有可撤销的操作",
+
+  "editorList.builtinTag": "官方关卡",
+  "editorList.userTag": "我的关卡",
+  "editorList.noHint": "（无备注）",
+  "editorList.exported": "已导出并复制 JSON",
+  "editorList.newTitle": "新建关卡",
+  "editorList.newDefaultName": "新关卡",
+  "editorList.created": "已创建，点击卡片进入编辑",
+  "editorList.imported": "已导入：{name}",
+  "editorList.importFailed": "导入失败：JSON 解析错误",
+  "editorList.editTitle": "编辑关卡信息",
+  "editorList.deleteTitle": "删除关卡",
+  "editorList.deleteMessage": "确定删除「{name}」？删除后无法恢复。",
+
+  "dialog.nameLabel": "关卡名称",
+  "dialog.namePlaceholder": "给关卡起个名字",
+  "dialog.hintLabel": "关卡备注",
+  "dialog.hintPlaceholder": "选填，会显示在关卡列表里",
+  "dialog.nameRequired": "关卡名称不能为空"
+}
