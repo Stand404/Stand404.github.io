@@ -1,23 +1,26 @@
 {
   "app.title": "保護塔菲",
-
   "common.confirm": "確定",
   "common.cancel": "取消",
   "common.delete": "刪除",
-
   "about.title": "關於",
-  "about.message": "保護塔菲（Protect Taffy）\n畫一條線，幫塔菲擋住黑粉。\n\n主介面：全螢幕、關於、設定\n遊戲：按住拖曳畫線，放開開跑\n編輯器：可自己做關卡並試玩",
-
+  "about.author": "作者：Stand",
+  "about.links": "官網/粉絲群：",
+  "about.site": "stand.homes（點擊開啟）",
+  "about.feedback": "有 bug 和建議歡迎回饋",
+  "about.submitLevel": "投稿關卡請聯繫主播",
   "settings.title": "設定",
   "settings.music": "音樂",
   "settings.sfx": "音效",
   "settings.language": "語言",
-
+  "settings.followSystem": "跟隨系統",
   "boot.preparing": "準備中…",
   "boot.done": "載入完成",
-
   "levelSelect.title": "選擇關卡",
-
+  "levelSelect.tabBuiltin": "官方關卡",
+  "levelSelect.tabCustom": "自訂關卡",
+  "levelSelect.customTitle": "自訂關卡",
+  "levelSelect.customEmpty": "還沒有自訂關卡，去編輯器做一個吧",
   "game.loseWater": "塔菲掉進水裡了",
   "game.loseLava": "塔菲掉進岩漿裡了",
   "game.loseSpike": "塔菲被尖刺扎到了",
@@ -28,14 +31,18 @@
   "game.winSubtitleCleared": "黑粉都消失了",
   "game.testWin": "撐住了！",
   "game.testLose": "再來一次",
-
   "editor.defaultName": "自訂關卡",
   "editor.defaultHint": "用編輯器製作的關卡",
   "editor.paletteTitle": "全部地形",
+  "editor.group.terrain": "地形",
+  "editor.group.liquid": "液體",
+  "editor.group.nature": "自然",
+  "editor.group.prop": "道具",
   "editor.paletteHint": "點擊磚塊選中，並替換上方快捷欄目前槽位",
+  "editor.help": "1. 頂部快捷欄選中一種地塊後，可以在虛線區域內繪製地圖：點一下繪製，再點一下刪除\n2. 按住塔菲或黑粉出生點，可以移動位置\n3. 右上角可以復原、試玩、清空或開啟全部地形\n開始你的創作吧！",
   "editor.cleared": "已清空地形",
   "editor.nothingToUndo": "沒有可復原的操作",
-
+  "editorList.title": "編輯列表",
   "editorList.builtinTag": "官方關卡",
   "editorList.userTag": "我的關卡",
   "editorList.noHint": "（無備註）",
@@ -48,7 +55,6 @@
   "editorList.editTitle": "編輯關卡資訊",
   "editorList.deleteTitle": "刪除關卡",
   "editorList.deleteMessage": "確定刪除「{name}」？刪除後無法復原。",
-
   "dialog.nameLabel": "關卡名稱",
   "dialog.namePlaceholder": "給關卡起個名字",
   "dialog.hintLabel": "關卡備註",

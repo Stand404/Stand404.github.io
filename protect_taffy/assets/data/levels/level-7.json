@@ -1,0 +1,111 @@
+{
+  "name": "Level7",
+  "hint": "",
+  "spawn": {
+    "x": 115,
+    "y": 396
+  },
+  "taffy": {
+    "x": 442,
+    "y": 749
+  },
+  "terrain": [
+    [
+      4,
+      9,
+      1
+    ],
+    [
+      5,
+      9,
+      2
+    ],
+    [
+      6,
+      9,
+      2
+    ],
+    [
+      7,
+      9,
+      2
+    ],
+    [
+      8,
+      9,
+      2
+    ],
+    [
+      9,
+      5,
+      3
+    ],
+    [
+      9,
+      6,
+      4
+    ],
+    [
+      9,
+      7,
+      4
+    ],
+    [
+      9,
+      8,
+      4
+    ],
+    [
+      9,
+      9,
+      5
+    ],
+    [
+      9,
+      10,
+      6
+    ],
+    [
+      10,
+      5,
+      7
+    ],
+    [
+      10,
+      6,
+      8
+    ],
+    [
+      10,
+      7,
+      8
+    ],
+    [
+      10,
+      8,
+      8
+    ],
+    [
+      10,
+      9,
+      8
+    ],
+    [
+      10,
+      10,
+      9
+    ]
+  ],
+  "tileDefs": [
+    "",
+    "terrain_grass_vertical_top",
+    "terrain_grass_vertical_middle",
+    "terrain_grass_block_top_left",
+    "terrain_grass_block_top",
+    "terrain_grass_block_center",
+    "terrain_grass_block_top_right",
+    "terrain_grass_block_bottom_left",
+    "terrain_grass_block_bottom",
+    "terrain_grass_block_bottom_right"
+  ]
+}

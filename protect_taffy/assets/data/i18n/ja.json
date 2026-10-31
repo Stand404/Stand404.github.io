@@ -1,23 +1,26 @@
 {
   "app.title": "タフィーを守れ",
-
   "common.confirm": "決定",
   "common.cancel": "キャンセル",
   "common.delete": "削除",
-
   "about.title": "このゲームについて",
-  "about.message": "タフィーを守れ（Protect Taffy）\n線を引いて、ヘイターからタフィーを守ろう。\n\nメニュー：フルスクリーン、このゲームについて、設定\nゲーム：ドラッグで線を引いて、離すとスタート\nエディター：自分でレベルを作って試せる",
-
+  "about.author": "作者：Stand",
+  "about.links": "サイト / ファングループ：",
+  "about.site": "stand.homes（タップで開く）",
+  "about.feedback": "バグや提案は歓迎です",
+  "about.submitLevel": "ステージ投稿は配信者までご連絡ください",
   "settings.title": "設定",
   "settings.music": "音楽",
   "settings.sfx": "効果音",
   "settings.language": "言語",
-
+  "settings.followSystem": "システムに従う",
   "boot.preparing": "準備中…",
   "boot.done": "読み込み完了",
-
   "levelSelect.title": "ステージ選択",
-
+  "levelSelect.tabBuiltin": "公式ステージ",
+  "levelSelect.tabCustom": "カスタムステージ",
+  "levelSelect.customTitle": "カスタムステージ",
+  "levelSelect.customEmpty": "カスタムステージはまだありません。エディターで作りましょう",
   "game.loseWater": "タフィーが水に落ちた",
   "game.loseLava": "タフィーが溶岩に落ちた",
   "game.loseSpike": "タフィーがトゲに刺された",
@@ -28,14 +31,18 @@
   "game.winSubtitleCleared": "ヘイターは全部消えた",
   "game.testWin": "耐え切った！",
   "game.testLose": "もう一度",
-
   "editor.defaultName": "カスタムステージ",
   "editor.defaultHint": "エディターで作ったステージ",
   "editor.paletteTitle": "すべての地形",
+  "editor.group.terrain": "地形",
+  "editor.group.liquid": "液体",
+  "editor.group.nature": "自然",
+  "editor.group.prop": "アイテム",
   "editor.paletteHint": "タイルをタップして選択し、上のクイックスロットと入れ替える",
+  "editor.help": "1. 上部のクイックバーで地形を選び、点線の範囲内に描きます：タップで設置、もう一度タップで削除\n2. タフィーやヘイターの出現マーカーを長押しして移動できます\n3. 右上で元に戻す / 試遊 / クリア / すべての地形を開けます\nさあ、作りましょう！",
   "editor.cleared": "地形を消去しました",
   "editor.nothingToUndo": "元に戻せる操作がありません",
-
+  "editorList.title": "ステージ一覧",
   "editorList.builtinTag": "公式ステージ",
   "editorList.userTag": "マイステージ",
   "editorList.noHint": "（メモなし）",
@@ -48,7 +55,6 @@
   "editorList.editTitle": "ステージ情報を編集",
   "editorList.deleteTitle": "ステージ削除",
   "editorList.deleteMessage": "「{name}」を削除しますか？元に戻せません。",
-
   "dialog.nameLabel": "ステージ名",
   "dialog.namePlaceholder": "ステージ名を入力",
   "dialog.hintLabel": "ステージのメモ",

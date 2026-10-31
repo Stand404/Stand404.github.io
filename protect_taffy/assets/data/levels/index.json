@@ -1,0 +1,49 @@
+{
+  "levels": [
+    {
+      "file": "level-1.json",
+      "name": "Level1",
+      "hint": ""
+    },
+    {
+      "file": "level-2.json",
+      "name": "Level2",
+      "hint": ""
+    },
+    {
+      "file": "level-3.json",
+      "name": "Level3",
+      "hint": ""
+    },
+    {
+      "file": "level-4.json",
+      "name": "Level4",
+      "hint": ""
+    },
+    {
+      "file": "level-5.json",
+      "name": "Level5",
+      "hint": ""
+    },
+    {
+      "file": "level-6.json",
+      "name": "Level6",
+      "hint": ""
+    },
+    {
+      "file": "level-7.json",
+      "name": "Level7",
+      "hint": ""
+    },
+    {
+      "file": "level-8.json",
+      "name": "Level8",
+      "hint": ""
+    },
+    {
+      "file": "level-9.json",
+      "name": "Level9",
+      "hint": ""
+    }
+  ]
+}

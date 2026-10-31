@@ -1,23 +1,26 @@
 {
   "app.title": "Protect Taffy",
-
   "common.confirm": "OK",
   "common.cancel": "Cancel",
   "common.delete": "Delete",
-
   "about.title": "About",
-  "about.message": "Protect Taffy\nDraw a line to keep the haters away from Taffy.\n\nMenu: fullscreen, about, settings\nGame: drag to draw, release to run\nEditor: build and test your own levels",
-
+  "about.author": "Author: Stand",
+  "about.links": "Website / Fan group: ",
+  "about.site": "stand.homes (tap to open)",
+  "about.feedback": "Bug reports and suggestions are welcome",
+  "about.submitLevel": "Contact the streamer to submit levels",
   "settings.title": "Settings",
   "settings.music": "Music",
   "settings.sfx": "Sound",
   "settings.language": "Language",
-
+  "settings.followSystem": "Follow system",
   "boot.preparing": "Preparing…",
   "boot.done": "Ready",
-
   "levelSelect.title": "Select Level",
-
+  "levelSelect.tabBuiltin": "Official Levels",
+  "levelSelect.tabCustom": "Custom Levels",
+  "levelSelect.customTitle": "Custom Levels",
+  "levelSelect.customEmpty": "No custom levels yet - make one in the editor",
   "game.loseWater": "Taffy fell into the water",
   "game.loseLava": "Taffy fell into the lava",
   "game.loseSpike": "Taffy got pricked by a spike",
@@ -28,14 +31,18 @@
   "game.winSubtitleCleared": "All the haters are gone",
   "game.testWin": "Held on!",
   "game.testLose": "Try again",
-
   "editor.defaultName": "Custom Level",
   "editor.defaultHint": "A level made in the editor",
   "editor.paletteTitle": "All Tiles",
+  "editor.group.terrain": "Terrain",
+  "editor.group.liquid": "Liquid",
+  "editor.group.nature": "Nature",
+  "editor.group.prop": "Props",
   "editor.paletteHint": "Tap a tile to select it and replace the active quick slot",
+  "editor.help": "1. Pick a tile in the top quick bar, then draw inside the dashed area: tap to place, tap again to erase\n2. Hold the Taffy or hater spawn marker to move it\n3. Top right: undo, test play, clear, or open All Tiles\nNow go create!",
   "editor.cleared": "Terrain cleared",
   "editor.nothingToUndo": "Nothing to undo",
-
+  "editorList.title": "Level List",
   "editorList.builtinTag": "Official",
   "editorList.userTag": "Mine",
   "editorList.noHint": "(no note)",
@@ -48,7 +55,6 @@
   "editorList.editTitle": "Edit Level Info",
   "editorList.deleteTitle": "Delete Level",
   "editorList.deleteMessage": "Delete \"{name}\"? This cannot be undone.",
-
   "dialog.nameLabel": "Level name",
   "dialog.namePlaceholder": "Give your level a name",
   "dialog.hintLabel": "Level note",

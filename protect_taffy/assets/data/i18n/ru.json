@@ -1,23 +1,26 @@
 {
   "app.title": "Защити Таффи",
-
   "common.confirm": "ОК",
   "common.cancel": "Отмена",
   "common.delete": "Удалить",
-
   "about.title": "Об игре",
-  "about.message": "Защити Таффи\nНарисуйте линию, чтобы защитить Таффи от хейтеров.\n\nМеню: полный экран, об игре, настройки\nИгра: рисуйте линию, отпустите — Таффи побежит\nРедактор: создавайте свои уровни и проверяйте их",
-
+  "about.author": "Автор: Stand",
+  "about.links": "Сайт / фан-группа: ",
+  "about.site": "stand.homes (нажмите)",
+  "about.feedback": "Сообщайте об ошибках и идеях",
+  "about.submitLevel": "По вопросам публикации уровней обращайтесь к стримеру",
   "settings.title": "Настройки",
   "settings.music": "Музыка",
   "settings.sfx": "Звуки",
   "settings.language": "Язык",
-
+  "settings.followSystem": "Как в системе",
   "boot.preparing": "Подготовка…",
   "boot.done": "Готово",
-
   "levelSelect.title": "Выбор уровня",
-
+  "levelSelect.tabBuiltin": "Официальные",
+  "levelSelect.tabCustom": "Свои уровни",
+  "levelSelect.customTitle": "Свои уровни",
+  "levelSelect.customEmpty": "Своих уровней пока нет — создайте в редакторе",
   "game.loseWater": "Таффи упала в воду",
   "game.loseLava": "Таффи упала в лаву",
   "game.loseSpike": "Таффи напоролась на шип",
@@ -28,14 +31,18 @@
   "game.winSubtitleCleared": "Все хейтеры исчезли",
   "game.testWin": "Выстояла!",
   "game.testLose": "Ещё раз",
-
   "editor.defaultName": "Свой уровень",
   "editor.defaultHint": "Уровень, созданный в редакторе",
   "editor.paletteTitle": "Все тайлы",
+  "editor.group.terrain": "Рельеф",
+  "editor.group.liquid": "Жидкости",
+  "editor.group.nature": "Природа",
+  "editor.group.prop": "Предметы",
   "editor.paletteHint": "Нажми на тайл, чтобы выбрать его и заменить активный слот",
+  "editor.help": "1. Выберите плитку в верхней панели и рисуйте внутри пунктирной области: нажатие ставит, повторное удаляет\n2. Удерживайте метку Таффи или спавна хейтеров, чтобы переместить её\n3. Справа сверху: отменить, тест, очистить или открыть все тайлы\nТеперь создавайте!",
   "editor.cleared": "Рельеф очищен",
   "editor.nothingToUndo": "Нечего отменять",
-
+  "editorList.title": "Список уровней",
   "editorList.builtinTag": "Официальный",
   "editorList.userTag": "Мой",
   "editorList.noHint": "(без заметки)",
@@ -48,7 +55,6 @@
   "editorList.editTitle": "Изменить уровень",
   "editorList.deleteTitle": "Удалить уровень",
   "editorList.deleteMessage": "Удалить «{name}»? Это действие необратимо.",
-
   "dialog.nameLabel": "Название уровня",
   "dialog.namePlaceholder": "Дай уровню название",
   "dialog.hintLabel": "Заметка к уровню",

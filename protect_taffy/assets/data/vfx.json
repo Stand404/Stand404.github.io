@@ -1,0 +1,30 @@
+{
+  "$comment": "危险物命中特效配置。每一项对应 public/assets/vfx/<kind>/<序号>.webp 一组逐帧图。数值都是「已经算好的最终结果」：运行时只查表和直接 setDisplaySize / 给 tween 参数，不再根据贴图尺寸或帧数做换算。width/height 是特效的最终显示宽高（由「最长边尺寸 ÷ 素材最长边」换算好写在这里）；三张素材长宽比不同（火焰 239x320 竖版、水花 320x248 横版、气流 320x310 近方形），所以不能只给一个边长。taffy / enemy 分开给，是因为塔菲（显示尺寸 180）和黑粉（42~48）体型差很多。出现时从 startScale（0.1 倍）放大到 1 倍，用时 scaleInMs，做出「炸开」的手感；动画帧率由 fps 控制，播完停留 holdMs 再淡出 fadeMs。",
+
+  "depth": 9,
+  "startScale": 0.1,
+  "scaleInMs": 200,
+  "holdMs": 120,
+  "fadeMs": 80,
+
+  "effects": {
+    "fire": {
+      "frames": 6,
+      "fps": 14,
+      "taffy": { "width": 75, "height": 100 },
+      "enemy": { "width": 37, "height": 50 }
+    },
+    "water": {
+      "frames": 12,
+      "fps": 14,
+      "taffy": { "width": 135, "height": 105 },
+      "enemy": { "width": 68, "height": 53 }
+    },
+    "air": {
+      "frames": 12,
+      "fps": 14,
+      "taffy": { "width": 105, "height": 102 },
+      "enemy": { "width": 53, "height": 51 }
+    }
+  }
+}

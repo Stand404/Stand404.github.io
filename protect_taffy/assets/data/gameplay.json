@@ -1,10 +1,10 @@
 {
   "$comment": "运行时数值参数。改手感请改这里，不用动代码。所有长度单位是世界坐标像素，时间单位是毫秒。",
   "world": {
-    "tileSize": 40,
-    "mapCols": 18,
-    "mapRows": 32,
-    "tileDrawSize": 41
+    "tileSize": 60,
+    "mapCols": 12,
+    "mapRows": 12,
+    "tileDrawSize": 60
   },
   "round": {
     "durationMs": 10000,
@@ -89,7 +89,10 @@
     "chargeGapXBack": 260,
     "protectDurationMs": 2900,
     "cryDurationMs": 2400,
+    "gestureWidth": 86,
     "gestureHeight": 110,
+    "tutorialGestureWidth": 70,
+    "tutorialGestureHeight": 90,
     "gestureFromY": 90,
     "gestureMs": 260,
     "gestureFadeMs": 220,

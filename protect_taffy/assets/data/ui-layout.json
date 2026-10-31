@@ -12,12 +12,19 @@
     },
     "title": {
       "offsetY": -190,
-      "iconSize": 42,
+      "iconSize": 72,
       "iconGap": 14,
       "fontSize": 36,
       "color": "#FDE7D7",
       "strokeColor": "#862536",
       "strokeThickness": 8
+    },
+    "body": {
+      "topY": -110,
+      "fontSize": 30,
+      "lineSpacing": 8,
+      "color": "#7a1f4f",
+      "wrapInset": 60
     },
     "rows": {
       "startY": -96,
@@ -26,7 +33,7 @@
       "leftBaseX": -196,
       "iconSize": 52,
       "labelOffsetX": 34,
-      "labelFontSize": 26,
+      "labelFontSize": 34,
       "labelColor": "#7a1f4f"
     },
     "track": {
@@ -124,22 +131,22 @@
   },
 
   "editorList": {
-    "titleY": 100,
+    "titleY": 164,
     "titleMaxWidth": 640,
     "titleMaxHeight": 230,
-    "listTop": 385,
+    "listTop": 317,
     "cardWidth": 660,
     "cardFallbackHeight": 132,
     "cardGap": 20,
     "maskTopInset": 8,
     "maskBottomInset": 36,
     "viewportInset": 20,
-    "headerButtonY": 230,
-    "headerButtonWidth": 92,
-    "headerButtonHeight": 84,
-    "backButtonX": 82,
+    "headerButtonY": 56,
+    "headerButtonWidth": 96,
+    "headerButtonHeight": 94,
+    "backButtonX": 74,
     "newButtonX": 522,
-    "importButtonX": 640,
+    "importButtonX": 638,
     "cardHeight": 132,
     "textLeftX": 80,
     "nameFontSize": 30,
